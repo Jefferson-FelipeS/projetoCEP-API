@@ -24,7 +24,7 @@ btn[1].addEventListener('click',() =>{
 //Funcão responsavel por retornar os dados da API CEP para dentro da aplicação;
 btn[0].addEventListener('click',() =>{
     let CEP = inputCEP.value;
-    const url = 'http://viacep.com.br/ws/'+CEP+'/json/';
+    const url = 'https://viacep.com.br/ws/'+CEP+'/json/';
     
 /*If ternário que vai verificar se o CEP foi digitado,lembrando que nao vai verificar 
 se ele foi digitado corretamente, e sim apenas vai verificar se o seu tamanho é valido;*/
