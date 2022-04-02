@@ -1,0 +1,47 @@
+.containerTwo{
+	width:60%;
+	height:40vh;
+	display: none;
+	flex-direction:column;
+	align-items:center;
+	justify-content: center;
+}
+@media(max-height:530px){
+	.containerTwo{
+		margin-top:20px;
+	}
+}
+.logradouro,.bairro,.localidade,.uf,.cep{
+	width: 100%;
+	height: 30px;
+	border: 1px solid #000;
+	font-size: 20px;
+	font-weight: bold;
+	padding-left:5px;
+	color:darkgray;
+}
+.cep{
+	margin-bottom:10px;
+}
+@media(max-width:680px){
+	.logradouro{
+		height:50px;
+	}
+}
+@media(max-width:394px){
+	.logradouro{
+		height:70px;
+	}
+}
+@media(max-width:369px){
+	.localidade,.bairro{
+		height:50px;
+		display:flex;
+		flex-direction:column;
+	}
+}
+span{
+	color:#ccc;
+	text-align:center;
+	margin-left:5px;
+}

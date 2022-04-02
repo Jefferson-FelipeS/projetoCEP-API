@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CE_API_Javascript</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
+ </head>
+ <body>
+    <!--titulo-->
+	<p class="titleCEP"><span class="txt">CEP</span> -- <strong>CODIGO DE ENDERECO POSTAL!</strong></p>
+
+	<!--Campo article para incersao do CEP no campo de preenchimento-->
+	<article class="container">
+		<label for="infCEP" class="labelTxt">Digite seu<strong> CEP :</strong></label>
+		<input type="number" name="CEP" id="inputCEP">
+		<button id="btn">Buscar</button>
+	</article>
+
+	<!--Campo que mostrará o resultado da busca do CEP-->
+	<article class="containerTwo">
+		<p id="msgERROR"></p>
+		<section class="logradouro">Logradouro:<span id="Span"></span></section>
+		<section class="bairro">Bairro:<span id="Span"></span></section>
+		<section class="localidade">Localidade:<span id="Span"></span></section>
+		<section class="uf">UF:<span id="Span"></span></section>
+		<section class="cep">CEP:<span id="Span"></span></section>
+		<button id="btn">Voltar a Busca</button>
+	</article>
+
+	<!--Rodapé-->
+	<footer>Desenvolvido por Jefferson!!!</footer>
+
+   <script type="text/javascript" src="script.js"></script>
+ </body>
+</html>
