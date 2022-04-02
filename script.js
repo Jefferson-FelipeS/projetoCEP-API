@@ -40,6 +40,11 @@ retornará o response do json com todos os dados necessarios para a aplicação;
             a.logradouro = 'Rua do rosário';
             a.bairro = 'Centro';
        }
+       if(a.logradouro === '' && a.bairro === '')
+       {
+            a.logradouro = '--';
+            a.bairro = '--';
+       }
 //Inserindo as informações da API em cada campo HTML correspondente;
          Span[0].textContent = a.logradouro;
          Span[1].textContent = a.bairro;
